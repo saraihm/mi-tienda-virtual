@@ -1,0 +1,82 @@
+{
+    "data": {
+        "productShortDescription":
+ 
+            [{
+            "productModel": "8081d-Ch",
+            "productDescription": "Seccional Reclinable",
+            "productClass": "Bergers",
+            "productImage": "http://falabella.scene7.com/is/image/Falabella/4479692_1?wid=400&hei=400",
+            "productBrand": "Basement Home",
+            "productPrices": [{
+                "bold": 0,
+                "name": "Precio Internet",
+                "value": "$ 749.990"
+            }, {
+                "bold": 0,
+                "name": "Precio Normal",
+                "value": "$ 1.309.990"
+            }],
+            "productEfficiency": "",
+            "productDiscount": "-",
+            "sku": "4479692",
+            "productUrl": "http://www.falabella.com/falabella-cl/product/4479692/",
+            "selltype": "internet"
+        }, {
+            "productModel": "8081d-Ch",
+            "productDescription": "Seccional Reclinable",
+            "productClass": "Bergers",
+            "productImage": "http://falabella.scene7.com/is/image/Falabella/4479692_1?wid=400&hei=400",
+            "productBrand": "Basement Home",
+            "productPrices": [{
+                "bold": 0,
+                "name": "Precio Internet",
+                "value": "$ 749.990"
+            }, {
+                "bold": 0,
+                "name": "Precio Normal",
+                "value": "$ 1.309.990"
+            }],
+            "productEfficiency": "",
+            "productDiscount": "15%",
+            "sku": "4479692",
+            "productUrl": "http://www.falabella.com/falabella-cl/product/4479692/",
+            "selltype": "internet"
+ 
+        }],
+        "atributes": [{
+            "atributesName": "Marca",
+            "tagValues": ["Aldo", "Aldo"]
+        }, {
+            "atributesName": "Relleno",
+            "tagValues": ["Espuma", "Aire"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }, {
+            "atributesName": "Item Garantia",
+            "tagValues": ["3 meses", "-"]
+        }]
+    }
+}

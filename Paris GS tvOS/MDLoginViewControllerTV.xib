@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDLoginViewControllerTV" customModule="Paris_GS_tvOS" customModuleProvider="target">
+            <connections>
+                <outlet property="txtContrasena" destination="ILe-xd-Nkq" id="n1U-jd-V6j"/>
+                <outlet property="txtUsuario" destination="3Ln-UO-qJE" id="1Kl-ie-DdA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+                <outlet property="viewLogin" destination="XhU-me-Se7" id="Xif-CN-r8O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="960" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhU-me-Se7">
+                    <rect key="frame" x="224" y="240" width="512" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Paris_login" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-qU-fVa">
+                            <rect key="frame" x="182" y="53" width="148" height="148"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ln-UO-qJE">
+                            <rect key="frame" x="48" y="263" width="405" height="46"/>
+                            <color key="tintColor" red="0.078431375319999996" green="0.62745100259999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="jP7-7c-MTi"/>
+                            </constraints>
+                            <color key="textColor" red="0.30196079611778259" green="0.30196079611778259" blue="0.30196079611778259" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="25"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ILe-xd-Nkq">
+                            <rect key="frame" x="48" y="329" width="405" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="shZ-gT-dMe"/>
+                            </constraints>
+                            <color key="textColor" red="0.30196079609999998" green="0.30196079609999998" blue="0.30196079609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="25"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnJ-Eu-voG">
+                            <rect key="frame" x="48" y="413" width="405" height="50"/>
+                            <color key="backgroundColor" red="0.35686275362968445" green="0.67450982332229614" blue="0.92549020051956177" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="KTI-V8-uHR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="25"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <state key="normal" title="Entrar"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VnJ-Eu-voG" firstAttribute="leading" secondItem="ILe-xd-Nkq" secondAttribute="leading" id="DKn-qN-Oqo"/>
+                        <constraint firstItem="VnJ-Eu-voG" firstAttribute="trailing" secondItem="ILe-xd-Nkq" secondAttribute="trailing" id="G9e-rG-Wuz"/>
+                        <constraint firstItem="VnJ-Eu-voG" firstAttribute="top" secondItem="ILe-xd-Nkq" secondAttribute="bottom" constant="35" id="K54-eo-Lc2"/>
+                        <constraint firstAttribute="trailing" secondItem="3Ln-UO-qJE" secondAttribute="trailing" constant="59" id="PdP-KS-DBK"/>
+                        <constraint firstItem="3Ln-UO-qJE" firstAttribute="leading" secondItem="XhU-me-Se7" secondAttribute="leading" constant="48" id="QE7-Ed-W3g"/>
+                        <constraint firstItem="ILe-xd-Nkq" firstAttribute="trailing" secondItem="3Ln-UO-qJE" secondAttribute="trailing" id="Qmp-oI-eNH"/>
+                        <constraint firstItem="dZe-qU-fVa" firstAttribute="top" secondItem="XhU-me-Se7" secondAttribute="top" constant="53" id="et0-gO-wlZ"/>
+                        <constraint firstItem="ILe-xd-Nkq" firstAttribute="leading" secondItem="3Ln-UO-qJE" secondAttribute="leading" id="fEK-jE-JCN"/>
+                        <constraint firstItem="ILe-xd-Nkq" firstAttribute="top" secondItem="3Ln-UO-qJE" secondAttribute="bottom" constant="20" id="s7E-xH-6tH"/>
+                        <constraint firstAttribute="width" constant="512" id="seE-nh-ieE"/>
+                        <constraint firstAttribute="height" constant="600" id="svt-lq-04f"/>
+                        <constraint firstItem="3Ln-UO-qJE" firstAttribute="top" secondItem="dZe-qU-fVa" secondAttribute="bottom" constant="59" id="x6X-fS-8Pz"/>
+                        <constraint firstItem="dZe-qU-fVa" firstAttribute="centerX" secondItem="XhU-me-Se7" secondAttribute="centerX" id="xlH-g0-Wzc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.35686275362968445" green="0.67450982332229614" blue="0.92549020051956177" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XhU-me-Se7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PoS-p2-uTY"/>
+                <constraint firstItem="XhU-me-Se7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RP2-4B-to3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo_Paris_login" width="148" height="148"/>
+    </resources>
+</document>

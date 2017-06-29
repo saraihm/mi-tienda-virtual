@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDPopUpDescriptionViewController" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="lbDescription" destination="rfB-JU-fd5" id="Hts-sV-S7r"/>
+                <outlet property="lbTitle" destination="zVD-73-V3m" id="pVz-RL-p5o"/>
+                <outlet property="view" destination="Gte-hk-o99" id="fr6-A5-7LV"/>
+                <outlet property="viewPopUp" destination="i5M-Pr-FkT" id="NUm-nR-iby"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gte-hk-o99">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="327" y="299" width="370" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-73-V3m">
+                            <rect key="frame" x="164" y="20" width="42" height="20"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.32011228799819946" blue="0.50334340333938599" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Estructura Madera Natural, Padding Fibras de Poliéster de 200 g/m2, tela fusionada 20 g/m2. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rfB-JU-fd5">
+                            <rect key="frame" x="20" y="48" width="330" height="100"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.3747478723526001" green="0.37475740909576416" blue="0.37475228309631348" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-yB-71x">
+                            <rect key="frame" x="299" y="10" width="61" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="5ba-6p-glK"/>
+                                <constraint firstAttribute="width" constant="61" id="zaF-sV-8EJ"/>
+                            </constraints>
+                            <state key="normal" image="bt_checkout_cancel">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="removeFromView:" destination="-1" eventType="touchUpInside" id="vIA-Pl-yiE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Dpw-yB-71x" secondAttribute="trailing" constant="10" id="3AB-SJ-1bw"/>
+                        <constraint firstItem="rfB-JU-fd5" firstAttribute="top" secondItem="zVD-73-V3m" secondAttribute="bottom" constant="8" id="9mG-dQ-Mgv"/>
+                        <constraint firstAttribute="width" constant="370" id="EyK-DH-whg"/>
+                        <constraint firstItem="zVD-73-V3m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="TGm-X4-yPG"/>
+                        <constraint firstItem="rfB-JU-fd5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="UUN-E8-Byb"/>
+                        <constraint firstItem="Dpw-yB-71x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="WJ4-VH-2vl"/>
+                        <constraint firstAttribute="trailing" secondItem="rfB-JU-fd5" secondAttribute="trailing" constant="20" id="a9X-jW-ZUn"/>
+                        <constraint firstItem="zVD-73-V3m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2W-JS-KVS"/>
+                        <constraint firstAttribute="height" constant="170" id="iom-mI-Ma6"/>
+                        <constraint firstAttribute="bottom" secondItem="rfB-JU-fd5" secondAttribute="bottom" constant="22" id="klu-iY-fmw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="centerY" secondItem="Gte-hk-o99" secondAttribute="centerY" id="Jvo-mc-g7v"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="centerX" secondItem="Gte-hk-o99" secondAttribute="centerX" id="Kni-oG-nL6"/>
+            </constraints>
+            <point key="canvasLocation" x="-537" y="147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_checkout_cancel" width="16" height="16"/>
+    </resources>
+</document>

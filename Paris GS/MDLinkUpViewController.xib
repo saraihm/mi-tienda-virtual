@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rui Abreu - AzoSans-Light.otf">
+            <string>AzoSans-Light</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Medium.otf">
+            <string>AzoSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDLinkUpViewController" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="btVincular" destination="wYZ-m7-I9W" id="tJH-sr-WkW"/>
+                <outlet property="lbTitle" destination="pNC-Cg-e8w" id="KTr-Gg-gka"/>
+                <outlet property="tableView" destination="L8x-cx-Fpt" id="njh-BM-HxC"/>
+                <outlet property="view" destination="vws-uu-YVD" id="J43-Du-kWp"/>
+                <outlet property="viewPopUp" destination="i5M-Pr-FkT" id="fVr-mD-cgJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un Apple TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-Cg-e8w">
+                    <fontDescription key="fontDescription" name="AzoSans-Light" family="Azo Sans" pointSize="25"/>
+                    <color key="textColor" red="0.35686275360000003" green="0.67450982329999998" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-tw-8bP">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SWG-vG-fmp"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-cx-Fpt">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="V9M-8A-cGA"/>
+                        <outlet property="delegate" destination="-1" id="NaJ-ZD-xXj"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-m7-I9W">
+                    <color key="backgroundColor" red="0.078431375324726105" green="0.62745100259780884" blue="0.90196079015731812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yd8-JQ-88K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AzoSans-Medium" family="Azo Sans" pointSize="18"/>
+                    <state key="normal" title="VINCULAR">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="linkUp:" destination="-1" eventType="touchUpInside" id="cuX-Il-5EA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uH4-kF-bvS">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="aWf-Fk-KvB"/>
+                        <constraint firstAttribute="height" constant="42" id="s6I-WV-7Uq"/>
+                    </constraints>
+                    <state key="normal" image="bt_checkout_cancel">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closePopUp:" destination="-1" eventType="touchUpInside" id="RYn-Yy-g6m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pNC-Cg-e8w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4wK-6f-5Bt"/>
+                <constraint firstAttribute="trailing" secondItem="uH4-kF-bvS" secondAttribute="trailing" id="5LF-aP-tDB"/>
+                <constraint firstItem="fdD-tw-8bP" firstAttribute="top" secondItem="pNC-Cg-e8w" secondAttribute="bottom" constant="15" id="7pl-fI-WjD"/>
+                <constraint firstAttribute="trailing" secondItem="wYZ-m7-I9W" secondAttribute="trailing" constant="20" id="BqO-SQ-S5l"/>
+                <constraint firstAttribute="trailing" secondItem="L8x-cx-Fpt" secondAttribute="trailing" constant="10" id="CAp-m5-m8O"/>
+                <constraint firstItem="wYZ-m7-I9W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Jzq-5z-RzE"/>
+                <constraint firstItem="L8x-cx-Fpt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="LCF-Bu-qDD"/>
+                <constraint firstItem="fdD-tw-8bP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="NTZ-yU-sCv"/>
+                <constraint firstItem="L8x-cx-Fpt" firstAttribute="top" secondItem="fdD-tw-8bP" secondAttribute="bottom" constant="21" id="TyR-p6-0ad"/>
+                <constraint firstAttribute="trailing" secondItem="fdD-tw-8bP" secondAttribute="trailing" constant="10" id="cx8-cy-hDt"/>
+                <constraint firstItem="pNC-Cg-e8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="34" id="mdU-aq-zlg"/>
+                <constraint firstItem="wYZ-m7-I9W" firstAttribute="top" secondItem="L8x-cx-Fpt" secondAttribute="bottom" constant="20" id="ofS-OM-ZrC"/>
+                <constraint firstAttribute="bottom" secondItem="wYZ-m7-I9W" secondAttribute="bottom" constant="20" id="vQb-ap-rnp"/>
+                <constraint firstItem="uH4-kF-bvS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xGv-dw-MBQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="-392" y="143"/>
+        </view>
+        <view contentMode="scaleToFill" id="vws-uu-YVD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_checkout_cancel" width="16" height="16"/>
+    </resources>
+</document>

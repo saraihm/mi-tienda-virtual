@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rui Abreu - AzoSans-Regular.otf">
+            <string>AzoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="Tow-o2-SPp" customClass="MDCollectionViewCell" customModule="Paris_GS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-DV-yh4">
+                        <rect key="frame" x="15" y="0.0" width="391" height="239"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hdj-17-61A">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HD3-6n-ANj">
+                        <rect key="frame" x="0.0" y="268" width="421" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PBQ-QP-uw4"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhz-4Y-ikH">
+                        <rect key="frame" x="312" y="230" width="94" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="fwO-2U-ff8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AzoSans-Regular" family="Azo Sans" pointSize="14"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Ver todos">
+                            <color key="titleColor" red="0.30196079611778259" green="0.30196079611778259" blue="0.30196079611778259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btShowAllAction:" destination="Tow-o2-SPp" eventType="touchUpInside" id="KKn-Ub-rak"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Nhz-4Y-ikH" secondAttribute="bottom" constant="10" id="4YM-A9-lrO"/>
+                <constraint firstItem="Loo-DV-yh4" firstAttribute="top" secondItem="Tow-o2-SPp" secondAttribute="top" id="4pL-Qb-O3R"/>
+                <constraint firstItem="HD3-6n-ANj" firstAttribute="leading" secondItem="Tow-o2-SPp" secondAttribute="leading" id="7bY-bk-QYS"/>
+                <constraint firstItem="Loo-DV-yh4" firstAttribute="leading" secondItem="Tow-o2-SPp" secondAttribute="leading" constant="15" id="DQ2-Fs-eA2"/>
+                <constraint firstAttribute="trailing" secondItem="Nhz-4Y-ikH" secondAttribute="trailing" constant="15" id="HId-gX-wo9"/>
+                <constraint firstAttribute="trailing" secondItem="Loo-DV-yh4" secondAttribute="trailing" constant="15" id="Sv7-UG-ggb"/>
+                <constraint firstAttribute="trailing" secondItem="HD3-6n-ANj" secondAttribute="trailing" id="ihU-hg-tq4"/>
+                <constraint firstAttribute="bottom" secondItem="HD3-6n-ANj" secondAttribute="bottom" id="lue-nc-dDL"/>
+                <constraint firstAttribute="bottom" secondItem="Loo-DV-yh4" secondAttribute="bottom" constant="30" id="pWT-24-Okq"/>
+            </constraints>
+            <size key="customSize" width="421" height="269"/>
+            <connections>
+                <outlet property="btShowAll" destination="Nhz-4Y-ikH" id="DSC-fi-N2Q"/>
+                <outlet property="collectionView" destination="Loo-DV-yh4" id="iBg-80-I40"/>
+            </connections>
+            <point key="canvasLocation" x="666.5" y="150.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

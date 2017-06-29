@@ -1,0 +1,6 @@
+framework module Pods_Paris_GS {
+  umbrella header "Pods-Paris GS-umbrella.h"
+
+  export *
+  module * { export * }
+}

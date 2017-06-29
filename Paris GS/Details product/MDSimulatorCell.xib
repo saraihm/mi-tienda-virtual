@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="simulatorCell" id="gTV-IL-0wX" customClass="MDSimulatorCell" customModule="Paris_GS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="cargando" translatesAutoresizingMaskIntoConstraints="NO" id="ePL-wJ-uXm">
+                        <rect key="frame" x="10" y="10" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="hoq-Go-24x"/>
+                            <constraint firstAttribute="height" constant="120" id="vro-dk-wgH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ePL-wJ-uXm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="B8q-WM-kmr"/>
+                <constraint firstItem="ePL-wJ-uXm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dg8-dm-Dgi"/>
+                <constraint firstAttribute="trailing" secondItem="ePL-wJ-uXm" secondAttribute="trailing" constant="10" id="NQv-RA-3L7"/>
+                <constraint firstItem="ePL-wJ-uXm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="UD2-Ny-b28"/>
+                <constraint firstAttribute="bottom" secondItem="ePL-wJ-uXm" secondAttribute="bottom" constant="10" id="k2t-dS-nzW"/>
+                <constraint firstItem="ePL-wJ-uXm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="mCJ-7k-QTn"/>
+                <constraint firstAttribute="trailing" secondItem="ePL-wJ-uXm" secondAttribute="trailing" constant="10" id="yff-ba-YTn"/>
+            </constraints>
+            <size key="customSize" width="187" height="145"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NQv-RA-3L7"/>
+                    <exclude reference="UD2-Ny-b28"/>
+                    <exclude reference="k2t-dS-nzW"/>
+                    <exclude reference="mCJ-7k-QTn"/>
+                    <exclude reference="yff-ba-YTn"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="image" destination="ePL-wJ-uXm" id="w5f-k5-lcR"/>
+            </connections>
+            <point key="canvasLocation" x="627" y="274"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cargando" width="160" height="160"/>
+    </resources>
+</document>

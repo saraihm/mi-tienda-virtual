@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rui Abreu - AzoSans-Light.otf">
+            <string>AzoSans-Light</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Medium.otf">
+            <string>AzoSans-Medium</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Regular.otf">
+            <string>AzoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDValidateExperiencePopUpController" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="btValidate" destination="mjr-Wn-MhA" id="Eii-nV-6TH"/>
+                <outlet property="cellOtherReason" destination="13X-HC-yzZ" id="mPj-43-d5P"/>
+                <outlet property="imgRadioOtherReason" destination="Jkf-ni-OJf" id="XJg-Y5-pp2"/>
+                <outlet property="lbTitleFirstPopUp" destination="Epp-yU-Lj7" id="GU1-bw-3D3"/>
+                <outlet property="lbTitleSecondPopUp" destination="jHm-YM-hNK" id="P2A-zH-pDw"/>
+                <outlet property="tableView" destination="0OO-xD-RTC" id="hUu-YE-e8m"/>
+                <outlet property="tableViewFirstPopUp" destination="IeD-4Z-rrf" id="eaP-mV-5NA"/>
+                <outlet property="tvOtherReason" destination="mH8-Nd-W2T" id="vuo-1Y-6BG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPopUPQuestion" destination="oT8-Nd-8An" id="6zL-sp-kL5"/>
+                <outlet property="viewPopUpReason" destination="mOY-L1-JxK" id="JoE-lT-3Hk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mOY-L1-JxK">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="707"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0OO-xD-RTC">
+                    <rect key="frame" x="30" y="110" width="431" height="467"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lQm-g0-2Up"/>
+                        <outlet property="delegate" destination="-1" id="AzK-kW-rAT"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjr-Wn-MhA">
+                    <rect key="frame" x="170.5" y="617" width="150" height="50"/>
+                    <color key="backgroundColor" red="0.078431375319999996" green="0.62745100259999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="T8s-gc-ehq"/>
+                        <constraint firstAttribute="height" constant="50" id="w9l-ch-taF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AzoSans-Medium" family="Azo Sans" pointSize="18"/>
+                    <state key="normal" title="Enviar">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sendReason:" destination="-1" eventType="touchUpInside" id="B9g-xQ-8VD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Porqué razón?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHm-YM-hNK">
+                    <rect key="frame" x="30" y="40" width="431" height="30"/>
+                    <fontDescription key="fontDescription" name="AzoSans-Regular" family="Azo Sans" pointSize="25"/>
+                    <color key="textColor" red="0.35686275360000003" green="0.67450982329999998" blue="0.92549020049999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfc-51-chf">
+                    <rect key="frame" x="430" y="0.0" width="61" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="2Mx-Ea-0fK"/>
+                        <constraint firstAttribute="height" constant="42" id="dGe-lH-m67"/>
+                    </constraints>
+                    <state key="normal" image="bt_checkout_cancel">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closePopUPReason:" destination="-1" eventType="touchUpInside" id="9cc-UR-eqd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mjr-Wn-MhA" firstAttribute="top" secondItem="0OO-xD-RTC" secondAttribute="bottom" constant="40" id="60g-fE-lgI"/>
+                <constraint firstItem="0OO-xD-RTC" firstAttribute="leading" secondItem="mOY-L1-JxK" secondAttribute="leading" constant="30" id="9MK-qA-5gz"/>
+                <constraint firstAttribute="trailing" secondItem="0OO-xD-RTC" secondAttribute="trailing" constant="30" id="AfL-K4-10Z"/>
+                <constraint firstItem="jHm-YM-hNK" firstAttribute="top" secondItem="mOY-L1-JxK" secondAttribute="top" constant="40" id="EKy-Va-t5m"/>
+                <constraint firstAttribute="trailing" secondItem="jHm-YM-hNK" secondAttribute="trailing" constant="30" id="Ghe-Id-F5z"/>
+                <constraint firstItem="jHm-YM-hNK" firstAttribute="centerX" secondItem="mOY-L1-JxK" secondAttribute="centerX" id="J4E-5h-zUy"/>
+                <constraint firstAttribute="bottom" secondItem="mjr-Wn-MhA" secondAttribute="bottom" constant="40" id="Qjf-jW-eNk"/>
+                <constraint firstItem="mjr-Wn-MhA" firstAttribute="centerX" secondItem="mOY-L1-JxK" secondAttribute="centerX" id="eRf-gU-p2u"/>
+                <constraint firstItem="jHm-YM-hNK" firstAttribute="leading" secondItem="mOY-L1-JxK" secondAttribute="leading" constant="30" id="qs0-be-gWg"/>
+                <constraint firstAttribute="trailing" secondItem="jfc-51-chf" secondAttribute="trailing" id="sSc-ev-OZx"/>
+                <constraint firstItem="jfc-51-chf" firstAttribute="top" secondItem="mOY-L1-JxK" secondAttribute="top" id="uUQ-OI-CAq"/>
+                <constraint firstItem="0OO-xD-RTC" firstAttribute="top" secondItem="jHm-YM-hNK" secondAttribute="bottom" constant="40" id="wcb-C3-Naf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-231.5" y="910.5"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="151" id="13X-HC-yzZ">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="13X-HC-yzZ" id="LIF-gB-LbY">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mH8-Nd-W2T" customClass="KMPlaceholderTextView" customModule="Paris_GS" customModuleProvider="target">
+                        <rect key="frame" x="197.5" y="23" width="286.5" height="99.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="AzoSans-Light" family="Azo Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Explique"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="7s8-Hj-8he"/>
+                        </connections>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otra razón:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zQ-ep-yIn">
+                        <rect key="frame" x="75" y="23" width="102.5" height="24"/>
+                        <fontDescription key="fontDescription" name="AzoSans-Light" family="Azo Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_radiocheck" translatesAutoresizingMaskIntoConstraints="NO" id="Jkf-ni-OJf">
+                        <rect key="frame" x="20" y="20" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="AjW-uE-J2o"/>
+                            <constraint firstAttribute="height" constant="30" id="ULv-yo-bBw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mH8-Nd-W2T" firstAttribute="leading" secondItem="7zQ-ep-yIn" secondAttribute="trailing" constant="20" id="9a5-k2-biE"/>
+                    <constraint firstItem="7zQ-ep-yIn" firstAttribute="centerY" secondItem="Jkf-ni-OJf" secondAttribute="centerY" id="DUJ-ll-wox"/>
+                    <constraint firstItem="Jkf-ni-OJf" firstAttribute="top" secondItem="LIF-gB-LbY" secondAttribute="topMargin" constant="12" id="TeU-Um-pYV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mH8-Nd-W2T" secondAttribute="trailing" id="Wzd-J7-XIv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mH8-Nd-W2T" secondAttribute="bottom" constant="20" id="YXa-aG-Axu"/>
+                    <constraint firstItem="mH8-Nd-W2T" firstAttribute="top" secondItem="7zQ-ep-yIn" secondAttribute="top" id="m4g-Mf-pVM"/>
+                    <constraint firstItem="Jkf-ni-OJf" firstAttribute="leading" secondItem="LIF-gB-LbY" secondAttribute="leading" constant="20" id="q8x-a9-3Dn"/>
+                    <constraint firstItem="7zQ-ep-yIn" firstAttribute="leading" secondItem="Jkf-ni-OJf" secondAttribute="trailing" constant="25" id="y05-Xk-OTQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-232" y="1416.5"/>
+        </tableViewCell>
+        <view contentMode="scaleToFill" id="oT8-Nd-8An">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="358"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Se concretó la venta?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epp-yU-Lj7">
+                    <rect key="frame" x="124.5" y="34" width="257" height="30"/>
+                    <fontDescription key="fontDescription" name="AzoSans-Regular" family="Azo Sans" pointSize="25"/>
+                    <color key="textColor" red="0.42158842089999998" green="0.73407578470000001" blue="0.94134145979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-Ua-u6S">
+                    <rect key="frame" x="445" y="0.0" width="61" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="0Ea-3c-63Q"/>
+                        <constraint firstAttribute="width" constant="61" id="e6p-R8-3Ma"/>
+                    </constraints>
+                    <state key="normal" image="bt_checkout_cancel">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closePopUp:" destination="-1" eventType="touchUpInside" id="5eV-T1-6W2"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-4Z-rrf">
+                    <rect key="frame" x="30" y="84" width="446" height="244"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KZM-A0-6As"/>
+                        <outlet property="delegate" destination="-1" id="3ao-BD-oN6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IeD-4Z-rrf" firstAttribute="top" secondItem="Epp-yU-Lj7" secondAttribute="bottom" constant="20" id="2m2-PI-AhQ"/>
+                <constraint firstAttribute="trailing" secondItem="FSa-Ua-u6S" secondAttribute="trailing" id="KxE-ce-DDA"/>
+                <constraint firstItem="IeD-4Z-rrf" firstAttribute="leading" secondItem="oT8-Nd-8An" secondAttribute="leading" constant="30" id="NZy-BD-MWr"/>
+                <constraint firstItem="Epp-yU-Lj7" firstAttribute="top" secondItem="oT8-Nd-8An" secondAttribute="top" constant="34" id="OfW-bw-2ub"/>
+                <constraint firstItem="FSa-Ua-u6S" firstAttribute="top" secondItem="oT8-Nd-8An" secondAttribute="top" id="bDc-wt-u3a"/>
+                <constraint firstAttribute="bottom" secondItem="IeD-4Z-rrf" secondAttribute="bottom" constant="30" id="bqa-mC-25h"/>
+                <constraint firstItem="Epp-yU-Lj7" firstAttribute="centerX" secondItem="oT8-Nd-8An" secondAttribute="centerX" id="jVv-F6-3Vq"/>
+                <constraint firstAttribute="trailing" secondItem="IeD-4Z-rrf" secondAttribute="trailing" constant="30" id="mz9-Gf-RZT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="373" y="802"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_checkout_cancel" width="16" height="16"/>
+        <image name="bt_radiocheck" width="25" height="25"/>
+    </resources>
+</document>

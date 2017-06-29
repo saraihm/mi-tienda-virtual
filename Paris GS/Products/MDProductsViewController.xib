@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Light.otf">
+            <string>AzoSans-Light</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Medium.otf">
+            <string>AzoSans-Medium</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Regular.otf">
+            <string>AzoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDProductsViewController" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="btCloseOnBoard" destination="J5f-Md-vUX" id="knK-S8-dzN"/>
+                <outlet property="collectionView" destination="k5u-K8-qX7" id="EnL-cc-wan"/>
+                <outlet property="lbSubTitle" destination="gKH-mn-1hv" id="7GQ-KQ-br5"/>
+                <outlet property="lbTitle" destination="FEY-d0-Fs7" id="7ns-zJ-UWR"/>
+                <outlet property="pageControl" destination="430-XS-Ufp" id="mZK-Uy-EPU"/>
+                <outlet property="scrollViewOnBoard" destination="YZK-i4-Ac1" id="7f4-y5-4s9"/>
+                <outlet property="view" destination="X1h-K0-hPx" id="OOS-hn-Ida"/>
+                <outlet property="viewCompareProducts" destination="ojA-jL-yT3" id="rj8-u3-JM9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="X1h-K0-hPx">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEY-d0-Fs7">
+                    <rect key="frame" x="45" y="80" width="186" height="36"/>
+                    <fontDescription key="fontDescription" name="AzoSans-Light" family="Azo Sans" pointSize="30"/>
+                    <color key="textColor" red="0.35686274509999999" green="0.67450980390000004" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKH-mn-1hv">
+                    <rect key="frame" x="45" y="118" width="934" height="25"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="18"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-K8-qX7">
+                    <rect key="frame" x="0.0" y="163" width="1024" height="605"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oRU-7p-mC3">
+                        <size key="itemSize" width="330" height="350"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jkg-ud-lbE"/>
+                        <outlet property="delegate" destination="-1" id="CT8-Gq-JtT"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3R-bX-k2e">
+                    <rect key="frame" x="0.0" y="162" width="1024" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KUD-mf-TBd"/>
+                    </constraints>
+                </view>
+                <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-i4-Ac1">
+                    <rect key="frame" x="0.0" y="50" width="1024" height="718"/>
+                </scrollView>
+                <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="430-XS-Ufp">
+                    <rect key="frame" x="492.5" y="721" width="39" height="37"/>
+                </pageControl>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-Md-vUX">
+                    <rect key="frame" x="884" y="708" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.9735146164894104" green="0.048467583954334259" blue="0.60582202672958374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="u7i-d5-9Lf"/>
+                        <constraint firstAttribute="width" constant="120" id="yZk-PM-nPV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AzoSans-Regular" family="Azo Sans" pointSize="19"/>
+                    <state key="normal" title="Salir">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeOnBoard:" destination="-1" eventType="touchUpInside" id="MQk-g7-Am6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gKH-mn-1hv" secondAttribute="trailing" constant="45" id="4wa-gf-x1u"/>
+                <constraint firstAttribute="trailing" secondItem="J5f-Md-vUX" secondAttribute="trailing" constant="20" id="Ada-96-acf"/>
+                <constraint firstAttribute="trailing" secondItem="U3R-bX-k2e" secondAttribute="trailing" id="FJd-of-HDH"/>
+                <constraint firstAttribute="bottom" secondItem="J5f-Md-vUX" secondAttribute="bottom" constant="20" id="OsU-rl-FNu"/>
+                <constraint firstItem="k5u-K8-qX7" firstAttribute="top" secondItem="U3R-bX-k2e" secondAttribute="bottom" id="RZ6-jJ-Wco"/>
+                <constraint firstItem="YZK-i4-Ac1" firstAttribute="top" secondItem="X1h-K0-hPx" secondAttribute="top" constant="50" id="Ri8-qG-KbZ"/>
+                <constraint firstItem="U3R-bX-k2e" firstAttribute="leading" secondItem="X1h-K0-hPx" secondAttribute="leading" id="Rsl-7G-tAI"/>
+                <constraint firstItem="430-XS-Ufp" firstAttribute="centerX" secondItem="X1h-K0-hPx" secondAttribute="centerX" id="Vem-vu-CIa"/>
+                <constraint firstAttribute="trailing" secondItem="YZK-i4-Ac1" secondAttribute="trailing" id="WoE-Cd-2TV"/>
+                <constraint firstAttribute="bottom" secondItem="YZK-i4-Ac1" secondAttribute="bottom" id="Wy3-E1-xeo"/>
+                <constraint firstItem="k5u-K8-qX7" firstAttribute="leading" secondItem="X1h-K0-hPx" secondAttribute="leading" id="XDI-Am-KN4"/>
+                <constraint firstItem="k5u-K8-qX7" firstAttribute="top" secondItem="gKH-mn-1hv" secondAttribute="bottom" constant="20" id="aTh-lE-1r1"/>
+                <constraint firstAttribute="bottom" secondItem="430-XS-Ufp" secondAttribute="bottom" constant="10" id="f2w-hz-2LV"/>
+                <constraint firstItem="gKH-mn-1hv" firstAttribute="top" secondItem="FEY-d0-Fs7" secondAttribute="bottom" constant="2" id="fue-Hj-6TU"/>
+                <constraint firstAttribute="bottom" secondItem="k5u-K8-qX7" secondAttribute="bottom" id="gUe-Zt-szy"/>
+                <constraint firstItem="gKH-mn-1hv" firstAttribute="leading" secondItem="FEY-d0-Fs7" secondAttribute="leading" id="j8b-nF-ud6"/>
+                <constraint firstAttribute="trailing" secondItem="k5u-K8-qX7" secondAttribute="trailing" id="jyy-VF-qud"/>
+                <constraint firstItem="YZK-i4-Ac1" firstAttribute="leading" secondItem="X1h-K0-hPx" secondAttribute="leading" id="tds-h6-zd8"/>
+                <constraint firstItem="FEY-d0-Fs7" firstAttribute="leading" secondItem="X1h-K0-hPx" secondAttribute="leading" constant="45" id="vZe-5k-ms4"/>
+                <constraint firstItem="FEY-d0-Fs7" firstAttribute="top" secondItem="X1h-K0-hPx" secondAttribute="top" constant="80" id="wkE-vv-ybZ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+        </view>
+        <view contentMode="scaleToFill" id="ojA-jL-yT3">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comparar Productos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83r-SW-NGq">
+                    <rect key="frame" x="203" y="11" width="194" height="24"/>
+                    <fontDescription key="fontDescription" name="AzoSans-Medium" family="Azo Sans" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oh-mi-JSb">
+                    <rect key="frame" x="25" y="8" width="20" height="22"/>
+                    <state key="normal" image="bt_subir_barracomparar"/>
+                    <connections>
+                        <action selector="showViewCompareProducts:" destination="-1" eventType="touchUpInside" id="Bx3-nO-sRR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fh-a0-j30">
+                    <rect key="frame" x="521" y="9" width="54" height="29"/>
+                    <fontDescription key="fontDescription" name="AzoSans-Regular" family="Azo Sans" pointSize="14"/>
+                    <state key="normal" title="cancelar">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelComparetion:" destination="-1" eventType="touchUpInside" id="jcZ-Tw-nBn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.078431375324726105" green="0.62745100259780884" blue="0.90196079015731812" alpha="0.75051185344827587" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Oh-mi-JSb" firstAttribute="top" secondItem="ojA-jL-yT3" secondAttribute="top" constant="8" id="3wB-Ix-Nne"/>
+                <constraint firstAttribute="trailing" secondItem="9Fh-a0-j30" secondAttribute="trailing" constant="25" id="AIo-aL-CjH"/>
+                <constraint firstItem="83r-SW-NGq" firstAttribute="centerY" secondItem="ojA-jL-yT3" secondAttribute="centerY" id="J92-0n-LRf"/>
+                <constraint firstItem="83r-SW-NGq" firstAttribute="centerX" secondItem="ojA-jL-yT3" secondAttribute="centerX" id="JeB-kL-KNq"/>
+                <constraint firstItem="9Fh-a0-j30" firstAttribute="centerY" secondItem="83r-SW-NGq" secondAttribute="centerY" id="MA0-kY-7aH"/>
+                <constraint firstItem="2Oh-mi-JSb" firstAttribute="leading" secondItem="ojA-jL-yT3" secondAttribute="leading" constant="25" id="fBV-89-XFZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1432" y="328"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_subir_barracomparar" width="20" height="11"/>
+    </resources>
+</document>

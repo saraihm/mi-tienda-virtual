@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="paris-Regular.otf">
+            <string>paris-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDSubcategoiresViewControllerTV" customModule="Paris_GS_tvOS" customModuleProvider="target">
+            <connections>
+                <outlet property="img" destination="sCh-rN-wiv" id="aJa-9F-CDb"/>
+                <outlet property="lbDescription" destination="J5A-LU-XiG" id="Q62-Kj-BsE"/>
+                <outlet property="lbTitle" destination="wY7-M6-8EQ" id="Yfy-RM-mLL"/>
+                <outlet property="view" destination="ERk-w7-de9" id="CVu-yZ-uG8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ERk-w7-de9">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sCh-rN-wiv"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5A-LU-XiG">
+                    <fontDescription key="fontDescription" name="paris-Regular" family="paris" pointSize="45"/>
+                    <color key="textColor" red="0.50588238240000005" green="0.50588238240000005" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-M6-8EQ">
+                    <fontDescription key="fontDescription" name="paris-Regular" family="paris" pointSize="55"/>
+                    <color key="textColor" red="0.35686275360000003" green="0.67450982329999998" blue="0.92549020049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J5A-LU-XiG" firstAttribute="top" secondItem="wY7-M6-8EQ" secondAttribute="bottom" constant="30" id="6ca-j3-owG"/>
+                <constraint firstItem="wY7-M6-8EQ" firstAttribute="leading" secondItem="J5A-LU-XiG" secondAttribute="leading" id="CIl-l3-de2"/>
+                <constraint firstAttribute="bottom" secondItem="sCh-rN-wiv" secondAttribute="bottom" id="FUI-Bu-2UC"/>
+                <constraint firstItem="sCh-rN-wiv" firstAttribute="leading" secondItem="ERk-w7-de9" secondAttribute="leading" id="GrM-eZ-aAe"/>
+                <constraint firstItem="wY7-M6-8EQ" firstAttribute="centerX" secondItem="sCh-rN-wiv" secondAttribute="centerX" id="Gyl-u4-37h"/>
+                <constraint firstAttribute="trailing" secondItem="J5A-LU-XiG" secondAttribute="trailing" id="K9Q-w9-Ugz"/>
+                <constraint firstItem="sCh-rN-wiv" firstAttribute="top" secondItem="ERk-w7-de9" secondAttribute="top" id="Nsu-Ti-rbh"/>
+                <constraint firstAttribute="trailing" secondItem="sCh-rN-wiv" secondAttribute="trailing" id="O4Q-iy-zAT"/>
+                <constraint firstItem="wY7-M6-8EQ" firstAttribute="top" secondItem="ERk-w7-de9" secondAttribute="top" constant="50" id="jOx-mL-1Fv"/>
+                <constraint firstItem="wY7-M6-8EQ" firstAttribute="trailing" secondItem="J5A-LU-XiG" secondAttribute="trailing" id="kUj-cQ-vMu"/>
+                <constraint firstItem="J5A-LU-XiG" firstAttribute="leading" secondItem="ERk-w7-de9" secondAttribute="leading" id="lcM-Dj-poK"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

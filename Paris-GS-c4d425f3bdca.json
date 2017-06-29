@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "paris-gs",
+  "private_key_id": "c4d425f3bdca3b15b9a4db3847374f92642c4751",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDmFobZwn/K+BTp\nLo6o/vxrLs07a07TnOTukXJmLznI/iJ1UYJe8MsUpWNtyUjXHofkn5+pZ63ZySkM\nPBH9mQ1nJLCWz67IZqohZTXV+aTmwUA2q/jN309nIkieSfn02qruVjoPYhMr+3Ac\n66vjPUa8CU8kHsLUz9T36vD7Eytm4vTNB95vuUenJ+lCx2QDHe/vrmEy9p8Clbzm\nkJnSjvm6vTz5KjoxjeDbbxNgs4VF0i5k2+U4DYO4IA4Yij3U/LnaJa10JGovVuoE\nc25yEEVRuht/1uu61D1/LmxkX7TTJdv+P8b/kdSec2wItQwGeVhC0SKzqCb9ewwQ\nRN6s0colAgMBAAECggEBALQXLbWD50KWqsdZCZB9BFVgbIL1mt1HEGkqrsAMds47\nG/13rvNgxZODYC+uPLUj0HnB9tZBsHGmYdqRqgM0qKjyrsVcCRISSVeaQGka3VdA\nK2KfeD6raxruWqiKfnqILQIfu5IO0bK7OyVn0UIr1BGZt7gt25F2mtrxqWzbtDzy\nK23Q68cedvTYZhUiq29FuW3gp7Rr+OSAMmoO0x9VCNF36bBkO9MkeKxk2rbpmuqT\nX6m/+Lpg8jmnBmseDw8OM0gXwT0ps4FbxN9AH0UiploANrLc2kRjwmZzKJ3ed52v\ncYhiot+McYC+ElXHYFFeNb6J/Bg5bX83pie/PZCMeAECgYEA9vCy/y9xwZ5BC8n4\nLrEpGdAAloBq/87BWv+lp4xx2SWshFecgwg36qpP/jWqaOCmmK5mg56FLrsBNuHF\nhHLCwDOgV8/+VVAxGYQQvOhg4t0RoFaCetf3LYiNCVxA2GP4aLSSEA/QhCwYARE+\nQGKFntNZDUxENCViR8sqCXXk8dUCgYEA7oeMetbTbk1/FcdWoarS77zaj1floGXZ\nsqjJviQOjcj237dc8iJOt1hrizU8IEl4gmc/taFjspmpJBlceAAvGpjkJmzWd6vO\nvx520rq0Hke/36123unmc2fpBGdtKrTuc87Ep8ELzy7iv6sol3ReXmwd4Su29t+T\ntZSb2CuJTxECgYEA13lcl3Nszcgrdf/8gbGw7YcknC7eLuzYp3DfuX3Bcft/t9ND\nDMtFD40hU+68DdvJQv0bEspl6ErhWmRTF6mT6maiCT3C7eqVjXBBsrUKparFUKVs\nIYkFdEPs3TgUlT1Wavb1ZPKHvm1DXNsQ+Nl/QwGkeQgNk3rzcTYELlEjPykCgYEA\n4sFdXNGowa1OaQfNZXcde+bO54Ipu2fXoq4uy2E/rK4lctu/sjfHGSknY3lCJXdy\n5pT8zdAVFQ5a6wRpEXMrVF+QVK8W20ErFCkD0KTI4hhXYW5oGNXGzGM184fXEcha\n/yDLdqZgcZ8i1A8EUabAp4akiRCjqOE2bGJQHRqWN+ECgYBYjHUJz5eS9x1rs7e0\nLgtJdn6oLs7/YHQgxRQKZLAnIZDp56UtgVKwvu6b183HAKfE9EwjA38KXbp0N+7b\nhb8wSBWelTb/WSoOZi01JkHyunWjUVGrCMZQBDfngOMfgaB2Tncq6fP8n+Pq4ZY8\nvZ71haWG59wJej2SoRMu/IrdNA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "symbol-upload-service-account@paris-gs.iam.gserviceaccount.com",
+  "client_id": "106490587234800169591",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/symbol-upload-service-account%40paris-gs.iam.gserviceaccount.com"
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="Rui Abreu - AzoSans-Medium.otf">
+            <string>AzoSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDLoginViewController" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="btLogin" destination="TEE-fx-geL" id="CPe-FH-W37"/>
+                <outlet property="imgBackground" destination="JCG-IV-L6f" id="OZM-1b-UEA"/>
+                <outlet property="lbBuildAndVersion" destination="17g-dT-4Fb" id="xUa-Xn-1Rr"/>
+                <outlet property="txtContrasena" destination="lcO-7g-7qo" id="4Ea-aN-0iE"/>
+                <outlet property="txtUsuario" destination="JBJ-wW-mRc" id="29E-hw-1wA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLogin" destination="xEp-Uw-NBs" id="uVF-Te-Wa1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_inicio" translatesAutoresizingMaskIntoConstraints="NO" id="JCG-IV-L6f">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEp-Uw-NBs">
+                    <rect key="frame" x="518" y="282" width="330" height="460"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Paris_login" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-Un-PvV">
+                            <rect key="frame" x="91" y="30" width="148" height="148"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="148" id="j8z-Vt-K1X"/>
+                                <constraint firstAttribute="width" constant="148" id="vlu-ig-3j3"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-wW-mRc">
+                            <rect key="frame" x="25" y="212" width="280" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1lV-S6-T3p"/>
+                            </constraints>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="c6W-VS-qfS"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEE-fx-geL">
+                            <rect key="frame" x="25" y="350" width="280" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.69019607843137254" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="AzoSans-Medium" family="Azo Sans" pointSize="20"/>
+                            <state key="normal" title="Entrar">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="login" destination="-1" eventType="touchUpInside" id="ipE-bZ-6Hf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-I3-4hg">
+                            <rect key="frame" x="144" y="415" width="161" height="32"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                            <state key="normal" title="Olvidaste tu contraseña?">
+                                <color key="titleColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="recoverPassword:" destination="-1" eventType="touchUpInside" id="5ai-uH-OkR"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Contraseña " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcO-7g-7qo">
+                            <rect key="frame" x="25" y="272" width="280" height="50"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="OZG-uZ-qcf"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JBJ-wW-mRc" firstAttribute="leading" secondItem="xEp-Uw-NBs" secondAttribute="leading" constant="25" id="01x-3g-YhY"/>
+                        <constraint firstItem="JBJ-wW-mRc" firstAttribute="centerX" secondItem="xEp-Uw-NBs" secondAttribute="centerX" id="1cw-64-Nzv"/>
+                        <constraint firstItem="lcO-7g-7qo" firstAttribute="width" secondItem="JBJ-wW-mRc" secondAttribute="width" id="32J-Tx-Co3"/>
+                        <constraint firstAttribute="trailing" secondItem="wOi-I3-4hg" secondAttribute="trailing" constant="25" id="GXS-Vn-xTu"/>
+                        <constraint firstItem="mJL-Un-PvV" firstAttribute="top" secondItem="xEp-Uw-NBs" secondAttribute="top" constant="30" id="Gpy-3k-r3Q"/>
+                        <constraint firstItem="JBJ-wW-mRc" firstAttribute="top" secondItem="mJL-Un-PvV" secondAttribute="bottom" constant="34" id="I5n-Sw-WY3"/>
+                        <constraint firstItem="TEE-fx-geL" firstAttribute="height" secondItem="lcO-7g-7qo" secondAttribute="height" id="IZV-6x-G0S"/>
+                        <constraint firstItem="TEE-fx-geL" firstAttribute="top" secondItem="lcO-7g-7qo" secondAttribute="bottom" constant="28" id="UdV-Jn-mr5"/>
+                        <constraint firstItem="lcO-7g-7qo" firstAttribute="height" secondItem="JBJ-wW-mRc" secondAttribute="height" id="Vs6-xD-401"/>
+                        <constraint firstItem="mJL-Un-PvV" firstAttribute="centerX" secondItem="xEp-Uw-NBs" secondAttribute="centerX" id="amx-ul-XqY"/>
+                        <constraint firstItem="lcO-7g-7qo" firstAttribute="top" secondItem="JBJ-wW-mRc" secondAttribute="bottom" constant="10" id="gFJ-xx-Rho"/>
+                        <constraint firstItem="lcO-7g-7qo" firstAttribute="centerX" secondItem="JBJ-wW-mRc" secondAttribute="centerX" id="hgp-8y-Lbi"/>
+                        <constraint firstItem="TEE-fx-geL" firstAttribute="width" secondItem="lcO-7g-7qo" secondAttribute="width" id="l7m-nO-l25"/>
+                        <constraint firstAttribute="width" constant="330" id="mKG-EA-emu"/>
+                        <constraint firstAttribute="trailing" secondItem="JBJ-wW-mRc" secondAttribute="trailing" constant="25" id="nXg-Z3-9gi"/>
+                        <constraint firstItem="TEE-fx-geL" firstAttribute="centerX" secondItem="lcO-7g-7qo" secondAttribute="centerX" id="s30-OH-kRL"/>
+                        <constraint firstAttribute="height" constant="460" id="uMo-I4-Xx6"/>
+                        <constraint firstItem="wOi-I3-4hg" firstAttribute="top" secondItem="TEE-fx-geL" secondAttribute="bottom" constant="15" id="yAF-EJ-nEk"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1cw-64-Nzv"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17g-dT-4Fb">
+                    <rect key="frame" x="1336" y="1001" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyP-do-qtX">
+                    <rect key="frame" x="30" y="873" width="109" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="E2P-pY-dEe"/>
+                        <constraint firstAttribute="height" constant="128" id="tWM-3n-FOo"/>
+                    </constraints>
+                    <state key="normal" image="settings_filled"/>
+                    <connections>
+                        <action selector="settings:" destination="-1" eventType="touchUpInside" id="DRF-Fn-LW8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JCG-IV-L6f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2BP-Ji-yAS"/>
+                <constraint firstAttribute="trailing" secondItem="JCG-IV-L6f" secondAttribute="trailing" id="5Wc-Ha-ax0"/>
+                <constraint firstAttribute="bottom" secondItem="17g-dT-4Fb" secondAttribute="bottom" constant="23" id="BEV-1x-cn4"/>
+                <constraint firstAttribute="bottom" secondItem="JCG-IV-L6f" secondAttribute="bottom" id="Btf-Q2-4d4"/>
+                <constraint firstItem="xEp-Uw-NBs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gqn-Oy-J8d"/>
+                <constraint firstAttribute="trailing" secondItem="17g-dT-4Fb" secondAttribute="trailing" constant="30" id="dib-Yc-44s"/>
+                <constraint firstItem="wyP-do-qtX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ke3-tC-WU8"/>
+                <constraint firstItem="JCG-IV-L6f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kok-GU-Kb2"/>
+                <constraint firstItem="xEp-Uw-NBs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="l1Z-Gc-S9t"/>
+                <constraint firstAttribute="bottom" secondItem="wyP-do-qtX" secondAttribute="bottom" constant="23" id="zwr-6w-KaB"/>
+            </constraints>
+            <point key="canvasLocation" x="282" y="374"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo_Paris_login" width="148" height="148"/>
+        <image name="bg_inicio" width="1023" height="745"/>
+        <image name="settings_filled" width="50" height="50"/>
+    </resources>
+</document>

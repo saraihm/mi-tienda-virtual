@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDPayViewControllerTV" customModule="Paris_GS_tvOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1080" height="1920"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GRACIAS" translatesAutoresizingMaskIntoConstraints="NO" id="zrg-se-a4f">
+                    <rect key="frame" x="0.0" y="-1" width="1081" height="1922"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zrg-se-a4f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-1" id="VGB-fs-o1g"/>
+                <constraint firstAttribute="trailing" secondItem="zrg-se-a4f" secondAttribute="trailing" constant="-1" id="fwV-ji-tFi"/>
+                <constraint firstItem="zrg-se-a4f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iEL-fd-Yfh"/>
+                <constraint firstAttribute="bottom" secondItem="zrg-se-a4f" secondAttribute="bottom" constant="-1" id="oli-TT-CTJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GRACIAS" width="1080" height="1920"/>
+    </resources>
+</document>

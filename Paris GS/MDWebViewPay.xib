@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDWebViewPay" customModule="Paris_GS" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="XEc-mO-2De" id="hez-Dg-CCI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_carro" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-mO-2De">
+                    <rect key="frame" x="0.0" y="68" width="1366" height="956"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XEc-mO-2De" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="Esl-8A-axX"/>
+                <constraint firstAttribute="trailing" secondItem="XEc-mO-2De" secondAttribute="trailing" id="IEH-mH-b0T"/>
+                <constraint firstItem="XEc-mO-2De" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ROO-Z7-NSt"/>
+                <constraint firstAttribute="bottom" secondItem="XEc-mO-2De" secondAttribute="bottom" id="YlS-gv-1pL"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_carro" width="1024" height="710"/>
+    </resources>
+</document>

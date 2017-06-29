@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCellFicha" id="eZB-Mp-s7z" customClass="MDCollectionViewCellFicha" customModule="Paris_GS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vj0-Pg-Vm9">
+                        <collectionViewLayout key="collectionViewLayout" id="j7p-G1-I3v" customClass="MDFichaTecnicaCollectionViewLayout" customModule="Paris_GS" customModuleProvider="target"/>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6K-1Z-rfX">
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pIr-sN-ffk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="L6K-1Z-rfX" secondAttribute="bottom" id="9aa-U5-ure"/>
+                <constraint firstAttribute="trailing" secondItem="vj0-Pg-Vm9" secondAttribute="trailing" constant="15" id="Cnd-O2-blU"/>
+                <constraint firstAttribute="trailing" secondItem="L6K-1Z-rfX" secondAttribute="trailing" id="SJc-2I-mLC"/>
+                <constraint firstItem="vj0-Pg-Vm9" firstAttribute="leading" secondItem="eZB-Mp-s7z" secondAttribute="leading" constant="15" id="cx0-0U-wZ9"/>
+                <constraint firstItem="vj0-Pg-Vm9" firstAttribute="top" secondItem="eZB-Mp-s7z" secondAttribute="top" id="hOG-tw-KV4"/>
+                <constraint firstAttribute="bottom" secondItem="vj0-Pg-Vm9" secondAttribute="bottom" constant="15" id="uJy-2s-GhY"/>
+                <constraint firstItem="L6K-1Z-rfX" firstAttribute="leading" secondItem="eZB-Mp-s7z" secondAttribute="leading" id="vcs-bR-TaJ"/>
+            </constraints>
+            <size key="customSize" width="421" height="198"/>
+            <connections>
+                <outlet property="collectionView" destination="vj0-Pg-Vm9" id="KQO-4E-7c8"/>
+            </connections>
+            <point key="canvasLocation" x="666.5" y="115"/>
+        </collectionViewCell>
+    </objects>
+</document>
